@@ -1,4 +1,4 @@
-package com.github.bogdan23a.matrixjetbrains
+package com.techhuntstudio.matrix
 
 import com.intellij.ide.highlighter.XmlFileType
 import com.intellij.openapi.components.service
@@ -6,7 +6,7 @@ import com.intellij.psi.xml.XmlFile
 import com.intellij.testFramework.TestDataPath
 import com.intellij.testFramework.fixtures.BasePlatformTestCase
 import com.intellij.util.PsiErrorElementUtil
-import com.github.bogdan23a.matrixjetbrains.services.MyProjectService
+import com.techhuntstudio.matrix.services.ProjectService
 
 @TestDataPath("\$CONTENT_ROOT/src/test/testData")
 class MyPluginTest : BasePlatformTestCase() {
@@ -30,7 +30,7 @@ class MyPluginTest : BasePlatformTestCase() {
     }
 
     fun testProjectService() {
-        val projectService = project.service<MyProjectService>()
+        val projectService = project.service<ProjectService>()
 
         assertNotSame(projectService.getRandomNumber(), projectService.getRandomNumber())
     }

@@ -1,18 +1,14 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.bogdan23a.matrixjetbrains</id>
-    <name>matrix-jetbrains Template</name>
-    <vendor>bogdan23a</vendor>
+    <id>com.techhuntstudio.matrix</id>
+    <name>Matrix</name>
+    <vendor>Tech Hunt (dev@thnt.io)</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <resource-bundle>messages.Bundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.bogdan23a.matrixjetbrains.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <themeProvider id="com.techhuntstudio.matrix" path="/theme/matrix.theme.json"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.bogdan23a.matrixjetbrains.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>
