@@ -43,7 +43,7 @@ This specific section is a source for the [plugin.xml](/src/main/resources/META-
 
 - Using the IDE built-in plugin system:
   
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "matrix-jetbrains"</kbd> >
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "matrix"</kbd> >
   <kbd>Install</kbd>
   
 - Manually:
