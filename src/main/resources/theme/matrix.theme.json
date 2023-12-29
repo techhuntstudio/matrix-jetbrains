@@ -334,7 +334,7 @@
       "passedEndColor": "hover.background",
       "progressColor": "normal.green",
       "progressEndColor": "hover.background",
-      "trackColor": "selection.background"
+      "trackColor": "hover.background"
     },
     "RadioButton": {
       "background": "primary.background",
