@@ -23,17 +23,17 @@
 
 - 🌐 **Futuristic Vibes** Immerse yourself in the cyberpunk atmosphere with a carefully crafted blend of dark hues and vivid green accents, creating an environment that sparks creativity and focus.
 
-- 🚀 **Hardcore Coding Experience** Tailored for those who push the boundaries of programming, NeonMatrix Green is optimized for maximum readability and efficiency, ensuring a seamless coding experience even during the most intense coding sessions.
+- 🚀 **Hardcore Coding Experience** Tailored for those who push the boundaries of programming, Matrix is optimized for maximum readability and efficiency, ensuring a seamless coding experience even during the most intense coding sessions.
 
 - 🎨 **Striking Contrast** The theme provides a perfect balance of contrast, making code elements pop and enhancing visibility, allowing you to navigate through your code effortlessly.
 
-- 🔧 **Versatile and Customizable** Fine-tune your coding experience with the flexibility to adjust the theme to your liking. Whether you prefer a subtle glow or an intense neon burst, NeonMatrix Green adapts to your coding style.
+- 🔧 **Versatile and Customizable** Fine-tune your coding experience with the flexibility to adjust the theme to your liking. Whether you prefer a subtle glow or an intense neon burst, Matrix adapts to your coding style.
 
-- 🔍 **Optimized for All Languages** From Python to JavaScript, C++ to HTML, NeonMatrix Green ensures a visually consistent and satisfying experience across a wide range of programming languages.
+- 🔍 **Optimized for All Languages** From Python to JavaScript, C++ to HTML, Matrix ensures a visually consistent and satisfying experience across a wide range of programming languages.
 
-- 💼 **Ideal for Hardcore Programmers** For those who live and breathe code, NeonMatrix Green is not just a theme – it's a statement. Elevate your programming journey with a theme that mirrors your dedication to the craft.
+- 💼 **Ideal for Hardcore Programmers** For those who live and breathe code, Matrix is not just a theme – it's a statement. Elevate your programming journey with a theme that mirrors your dedication to the craft.
 
-**Unleash the power of NeonMatrix Green** and embrace a coding environment that goes beyond the ordinary. Elevate your programming aesthetics to new heights and experience the future of coding today! 🚀💻✨
+**Unleash the power of the Matrix** and embrace a coding environment that goes beyond the ordinary. Elevate your programming aesthetics to new heights and experience the future of coding today! 🚀💻✨
 
 <!-- Plugin description end -->
 
