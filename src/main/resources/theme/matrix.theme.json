@@ -236,7 +236,7 @@
       },
       "background": "primary.background",
       "foreground": "primary.foreground",
-      "inactiveBackground": "primary.foreground"
+      "inactiveBackground": "primary.background"
     },
     "MemoryIndicator": {
       "allocatedBackground": "hover.background",
