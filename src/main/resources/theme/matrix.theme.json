@@ -96,7 +96,7 @@
         "endBorderColor": "normal.green",
         "focusColor": "bright.green",
         "focusedBorderColor": "bright.green",
-        "foreground": "primary.background"
+        "foreground": "primary.foreground"
       },
       "background": "primary.background",
       "disabledBorderColor": "primary.foreground",
@@ -146,14 +146,10 @@
     },
     "Counter": {
       "background": "normal.green",
-      "foreground": "primary.background"
+      "foreground": "primary.foreground"
     },
     "DefaultTabs": {
-      "background": "primary.background",
-      "hoverBackground": "hover.background",
-      "foreground": "primary.foreground",
-      "underlinedTabForeground": "cursor.text",
-      "underlinedTabBackground": "normal.green"
+      "hoverBackground": "hover.background"
     },
     "DragAndDrop": {
       "areaBackground": "primary.background",
@@ -216,7 +212,7 @@
       "background": "primary.background",
       "foreground": "primary.foreground",
       "border": "4,0,4,0",
-      "hoverBackground": "hover.background",
+      "hoverBackground": "dim.green",
       "rowHeight": "24",
       "selectionForeground": "primary.background",
       "selectionBackground": "normal.green",
@@ -313,7 +309,7 @@
       },
       "Header": {
         "activeBackground": "primary.background",
-        "activeForeground": "primary.background",
+        "activeForeground": "primary.foreground",
         "inactiveBackground": "primary.foreground"
       },
       "Toolbar": {
