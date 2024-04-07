@@ -492,7 +492,7 @@
       "Log": {
         "Commit": {
           "Reference": {
-            "foreground": "primary.foreground"
+            "foreground": "primary.background"
           },
           "currentBranchBackground": "primary.background",
           "hoveredBackground": "hover.background",
