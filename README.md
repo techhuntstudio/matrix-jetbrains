@@ -52,7 +52,7 @@ This specific section is a source for the [plugin.xml](/src/main/resources/META-
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
 ## Deploy
-
+- [TO-DO]: the git actions should deploy this, but it needs a parameter (env var probably). The deploy is manual so far and you just upload the jar to the jetbrains website
 ---
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 
