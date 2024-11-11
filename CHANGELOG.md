@@ -2,9 +2,13 @@
 
 # matrix-jetbrains Changelog
 
-## [Unreleased]
+## [0.0.6] - 2024-11-11
 ### Added
-- 
+- Open end support for IntelliJ
+
+## [0.0.5] - 2024-19-08
+### Added
+- Support for IntelliJ 242.*
 
 ## [0.0.4] - 2024-04-01
 ### Added
