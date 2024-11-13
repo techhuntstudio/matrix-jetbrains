@@ -2,6 +2,12 @@
 
 # matrix-jetbrains Changelog
 
+## [Unreleased] - 2024-13-11
+
+### Added
+
+- this release was generated using CI/CD
+
 ## [0.0.7] - 2024-13-11
 
 ### Added
