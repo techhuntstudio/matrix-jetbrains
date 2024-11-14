@@ -12,6 +12,7 @@ jobs:
   # Prepare and publish the plugin to JetBrains Marketplace repository
   release:
     name: Publish Plugin
+    environment: Matrix
     runs-on: ubuntu-latest
     permissions:
       contents: write
