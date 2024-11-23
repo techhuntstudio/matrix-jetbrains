@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### Chores
+
+- updating libraries
+
 ## [0.0.8] - 2024-11-23
 
 ### Added
