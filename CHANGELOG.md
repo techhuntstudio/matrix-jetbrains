@@ -2,7 +2,9 @@
 
 # matrix-jetbrains Changelog
 
-## [Unreleased] - 2024-13-11
+## [Unreleased]
+
+## [0.0.8] - 2024-11-23
 
 ### Added
 
@@ -46,6 +48,8 @@
 
 - Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
 
+[Unreleased]: https://github.com/techhuntstudio/matrix-jetbrains/compare/v0.0.8...HEAD
+[0.0.8]: https://github.com/techhuntstudio/matrix-jetbrains/compare/v0.0.7...v0.0.8
 [0.0.7]: https://github.com/techhuntstudio/matrix-jetbrains/compare/v0.0.6...v0.0.7
 [0.0.6]: https://github.com/techhuntstudio/matrix-jetbrains/compare/v0.0.5...v0.0.6
 [0.0.5]: https://github.com/techhuntstudio/matrix-jetbrains/compare/v0.0.4...v0.0.5
