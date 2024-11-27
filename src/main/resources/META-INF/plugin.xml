@@ -2,12 +2,11 @@
 <idea-plugin>
     <id>com.techhuntstudio.matrix</id>
     <name>Matrix</name>
-    <vendor>Tech Hunt (dev@thnt.io)</vendor>
-
+    <vendor url="https://github.com/techhuntstudio">Tech Hunt (dev@thnt.io)</vendor>
+    <description><![CDATA[
+        <h2>Neon cyberpunk theme that bathes your coding environment in a mesmerizing green glow reminiscent of a neon-lit future</h2>
+    ]]></description>
     <depends>com.intellij.modules.platform</depends>
-
-    <resource-bundle>messages.Bundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider id="com.techhuntstudio.matrix" path="/theme/matrix.theme.json"/>
     </extensions>
