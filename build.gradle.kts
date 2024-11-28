@@ -50,6 +50,19 @@ kotlin {
 intellijPlatform {
     pluginConfiguration {
         name.set(properties("pluginName"))
+        group = properties("pluginGroup")
+        vendor {
+            name.set(properties("pluginVendor"))
+            url.set(properties("pluginVendorUrl"))
+            email.set(properties("pluginVendorEmail"))
+        }
+        productDescriptor {
+            optional = true
+        }
+        ideaVersion {
+            sinceBuild.set(properties("pluginSinceBuild"))
+            untilBuild.set(properties("pluginUntilBuild"))
+        }
 //        plugins(providers.gradleProperty("platformPlugins").map { it.split(',') })
     }
 }
