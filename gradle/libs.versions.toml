@@ -1,18 +1,16 @@
 [versions]
 # libraries
-annotations = "26.0.1"
 
 # plugins
 kotlin = "2.0.21"
 changelog = "2.2.1"
 gradleIntelliJPlatformPlugin = "2.1.0"
 gradleIntelliJPlatformMigrationPlugin = "2.1.0"
-qodana = "0.1.13"
+qodana = "2024.1.5"
 kover = "0.8.3"
 jte = "3.1.15"
 
 [libraries]
-annotations = { group = "org.jetbrains", name = "annotations", version.ref = "annotations" }
 jte = { group = "gg.jte", name = "jte-kotlin", version.ref = "jte" }
 
 [plugins]

@@ -1,6 +1,8 @@
 import gg.jte.ContentType
+import org.jetbrains.changelog.Changelog
 import org.jetbrains.changelog.date
 import org.jetbrains.changelog.markdownToHTML
+import org.jetbrains.intellij.platform.gradle.Constants.Constraints.LATEST_VERSION
 import org.jetbrains.intellij.platform.gradle.TestFrameworkType
 import java.nio.file.Paths
 
@@ -8,7 +10,7 @@ fun properties(key: String) = providers.gradleProperty(key)
 fun environment(key: String) = providers.environmentVariable(key)
 
 plugins {
-    java
+    id("java")
     id("gg.jte.gradle") version "3.1.15"
     libs.plugins.jte // JTE support
     alias(libs.plugins.kotlin) // Kotlin support
@@ -40,6 +42,8 @@ dependencies {
     implementation(libs.jte)
     intellijPlatform {
         create(properties("platformType"), properties("platformVersion"))
+        plugins(providers.gradleProperty("platformPlugins").map { it.split(',') })
+        bundledPlugins(providers.gradleProperty("platformBundledPlugins").map { it.split(',') })
         instrumentationTools()
         pluginVerifier()
         zipSigner()
@@ -61,30 +65,24 @@ intellijPlatform {
                 subList(indexOf(start) + 1, indexOf(end)).joinToString("\n").let(::markdownToHTML)
             }
         }
-        name.set(properties("pluginName"))
-        group = properties("pluginGroup")
-//        plugins(providers.gradleProperty("platformPlugins").map { it.split(',') })
-        // Configure Gradle Changelog Plugin - read more: https://github.com/JetBrains/gradle-changelog-plugin
-        changelog {
-            version.set(properties("pluginVersion"))
-            path.set(file("CHANGELOG.md").canonicalPath)
-            header.set(provider { "${version.get()} - ${date()}" })
-            headerParserRegex.set("""(\d\.\d\.\d)""".toRegex())
-            itemPrefix.set("-")
-            keepUnreleasedSection.set(true)
-            unreleasedTerm.set("[Unreleased]")
-            groups.set(listOf("Added", "Changed", "Deprecated", "Removed", "Fixed", "Security"))
-        }
-        vendor {
-            name.set(properties("pluginVendor"))
-            url.set(properties("pluginVendorUrl"))
-            email.set(properties("pluginVendorEmail"))
-        }
-        ideaVersion {
-            sinceBuild.set(properties("pluginSinceBuild"))
-            untilBuild.set(properties("pluginUntilBuild"))
+
+        val changelog = project.changelog // local variable for configuration cache compatibility
+        // Get the latest available change notes from the changelog file
+        changeNotes = providers.gradleProperty("pluginVersion").map { pluginVersion ->
+            with(changelog) {
+                renderItem(
+                    (getOrNull(pluginVersion) ?: getUnreleased())
+                        .withHeader(false)
+                        .withEmptySections(false),
+                    Changelog.OutputType.HTML,
+                )
+            }
         }
 
+        ideaVersion {
+            sinceBuild.set(properties("pluginSinceBuild"))
+            untilBuild.set(properties("pluginUntilBuild").takeIf { !it.orNull.isNullOrBlank() } ?: provider { null })
+        }
     }
 
     signing {
@@ -98,7 +96,8 @@ intellijPlatform {
         // The pluginVersion is based on the SemVer (https://semver.org) and supports pre-release labels, like 2.1.7-alpha.3
         // Specify pre-release label to publish the plugin in a custom Release Channel automatically. Read more:
         // https://plugins.jetbrains.com/docs/intellij/deployment.html#specifying-a-release-channel
-        channels = listOf("default")
+        channels = providers.gradleProperty("pluginVersion")
+            .map { listOf(it.substringAfter('-', "").substringBefore('.').ifEmpty { "default" }) }
     }
 
     pluginVerification {
@@ -106,6 +105,7 @@ intellijPlatform {
             recommended()
         }
     }
+    buildSearchableOptions = false
 }
 
 changelog {
@@ -136,7 +136,7 @@ tasks {
     generateJte {
         sourceDirectory = Paths.get("src/main/resources")
         contentType = ContentType.Plain
-        targetDirectory = Paths.get("src/main/kotlin")
+        targetDirectory = Paths.get("src/main/kotlin/jte")
         packageName = "com.techhuntstudio.matrix.themes"
 
     }
@@ -161,12 +161,8 @@ intellijPlatformTesting {
             }
 
             plugins {
-                robotServerPlugin()
+                robotServerPlugin(LATEST_VERSION)
             }
         }
     }
-}
-
-tasks.buildSearchableOptions {
-    enabled = false
 }
