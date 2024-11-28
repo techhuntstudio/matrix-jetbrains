@@ -43,6 +43,7 @@ kotlin {
         intellijPlatform {
             create(properties("platformType"), properties("platformVersion"))
             instrumentationTools()
+            pluginVerifier()
             testFramework(TestFrameworkType.Platform)
         }
     }
