@@ -59,7 +59,7 @@ intellijPlatform {
             email.set(properties("pluginVendorEmail"))
         }
         productDescriptor {
-            code = ""
+            code = "PMATRIX"
             releaseDate = "20240103"
             releaseVersion = "0"
             optional = true
