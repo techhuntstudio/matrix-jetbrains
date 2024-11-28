@@ -5,7 +5,8 @@ annotations = "26.0.1"
 # plugins
 kotlin = "2.0.21"
 changelog = "2.2.1"
-gradleIntelliJPlugin = "1.17.4"
+gradleIntelliJPlatformPlugin = "2.1.0"
+gradleIntelliJPlatformMigrationPlugin = "2.1.0"
 qodana = "0.1.13"
 kover = "0.8.3"
 jte = "3.1.15"
@@ -16,7 +17,8 @@ jte = { group = "gg.jte", name = "jte-kotlin", version.ref = "jte" }
 
 [plugins]
 changelog = { id = "org.jetbrains.changelog", version.ref = "changelog" }
-gradleIntelliJPlugin = { id = "org.jetbrains.intellij", version.ref = "gradleIntelliJPlugin" }
+gradleIntelliJPlatformPlugin = { id = "org.jetbrains.intellij.platform", version.ref = "gradleIntelliJPlatformPlugin" }
+gradleIntelliJPlatformMigrationPlugin = { id = "org.jetbrains.intellij.platform", version.ref = "gradleIntelliJPlatformMigrationPlugin" }
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
 qodana = { id = "org.jetbrains.qodana", version.ref = "qodana" }
