@@ -67,6 +67,11 @@ intellijPlatform {
         }
 //        plugins(providers.gradleProperty("platformPlugins").map { it.split(',') })
     }
+    pluginVerification {
+        ides {
+            recommended()
+        }
+    }
 }
 // Configure Gradle IntelliJ Plugin - read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 //intellij {
