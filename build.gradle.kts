@@ -35,14 +35,15 @@ repositories {
 kotlin {
     @Suppress("UnstableApiUsage")
     jvmToolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(17)
         vendor = JvmVendorSpec.JETBRAINS
     }
     dependencies {
         implementation(libs.jte)
         intellijPlatform {
-            testFramework(TestFrameworkType.Platform)
             create(properties("platformType"), properties("platformVersion"))
+            instrumentationTools()
+            testFramework(TestFrameworkType.Platform)
         }
     }
 }
