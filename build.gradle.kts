@@ -59,6 +59,8 @@ intellijPlatform {
             email.set(properties("pluginVendorEmail"))
         }
         productDescriptor {
+            releaseDate = "20240103"
+            releaseVersion = "0"
             optional = true
         }
         ideaVersion {
