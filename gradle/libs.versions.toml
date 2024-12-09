@@ -4,8 +4,8 @@
 # plugins
 kotlin = "2.0.21"
 changelog = "2.2.1"
-gradleIntelliJPlatformPlugin = "2.1.0"
-gradleIntelliJPlatformMigrationPlugin = "2.1.0"
+gradleIntelliJPlatformPlugin = "2.2.0"
+gradleIntelliJPlatformMigrationPlugin = "2.2.0"
 qodana = "2024.1.5"
 kover = "0.8.3"
 jte = "3.1.15"
