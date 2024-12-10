@@ -27,7 +27,7 @@ version = providers.gradleProperty("pluginVersion").get()
 
 // Set the JVM language level used to build the project. Use Java 11 for 2020.3+, Java 17 for 2022.2+, Java 21 for 2024.2+
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
 
 repositories {
