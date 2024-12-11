@@ -4,10 +4,17 @@
 
 ## [Unreleased]
 
-### Chores
+### Changed 
 
-- updating libraries
-- adding templating system
+- Relaxed the version range for the plugin
+- Kotlin updated to 2.1.0
+- Gradle IntelliJ platform plugin updated to 2.2.0
+- Qodana updated to 2024.2.6
+- Kover updated to 0.8.3
+
+### Notes
+
+- Attempted to use JTE to generate themes from templates. Turns out that the library brings some dependencies that are not detected by the plugin verifier as unused. Trying to remove some of them results in the verifier not being able to find the classes. So, for now, the plugin will continue to use the hardcoded themes.  
 
 ## [0.0.8] - 2024-11-23
 

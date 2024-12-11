@@ -3,6 +3,8 @@
 ![Build](https://github.com/techhuntstudio/matrix-jetbrains/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/23426-matrix.svg)](https://plugins.jetbrains.com/plugin/23426-matrix)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/23426-matrix.svg)](https://plugins.jetbrains.com/plugin/23426-matrix)
+![Repo Size](https://img.shields.io/github/repo-size/techhuntstudio/matrix-jetbrains)
+![Static Badge](https://img.shields.io/badge/--FFDD04?style=flat&logo=buymeacoffee&logoColor=222222&label=Buy%20Me%20A%20Coffee%20&labelColor=FFDD04&color=FFDD04&link=https%3A%2F%2Fbuymeacoffee.com%2Fbogdan23a)
 
 <!-- Plugin description -->
 **"Matrix"** is a neon cyberpunk theme that aims to bathe your coding environment in a mesmerizing green glow reminiscent of a neon-lit future.

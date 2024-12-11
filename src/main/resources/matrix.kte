@@ -3,7 +3,7 @@
 {
 "name": "Matrix",
 "dark": true,
-"author": "Tech Hunt <dev@thnt.io>",
+"author": "Tech Hunt (dev@thnt.io)",
 "editorScheme": "/theme/matrix.xml",
 "colors": {
 "primary.background": "#101317",
