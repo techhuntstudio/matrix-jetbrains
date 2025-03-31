@@ -8,7 +8,7 @@ gradleIntelliJPlatformPlugin = "2.5.0"
 gradleIntelliJPlatformMigrationPlugin = "2.5.0"
 qodana = "2024.3.3"
 kover = "0.9.0"
-jte = "3.1.16"
+jte = "3.2.0"
 
 [libraries]
 jte = { group = "gg.jte", name = "jte-kotlin", version.ref = "jte" }
