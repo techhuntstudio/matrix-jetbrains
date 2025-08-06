@@ -3,7 +3,7 @@
 
 # plugins
 kotlin = "2.1.20"
-changelog = "2.2.1"
+changelog = "2.4.0"
 gradleIntelliJPlatformPlugin = "2.5.0"
 gradleIntelliJPlatformMigrationPlugin = "2.5.0"
 qodana = "2025.1.1"
